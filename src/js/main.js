@@ -40,7 +40,7 @@ window.onload = ()=>{
         images[i].classList.add('visible');
         ( i===7 ) ? i = 0 : i++; 
     }, 800);
-    setInterval(loader, 2000);
+    // setInterval(loader, 2000);
 }
 
 let add_btns = document.querySelectorAll('#add');
@@ -54,3 +54,14 @@ for (let button of add_btns){
         orders.push(name);
     })
 }
+
+document.querySelectorAll('.imageContainer img').forEach(element => {
+    element.addEventListener('click', ()=>{
+        document.querySelector('.popup_image').style.display = "block";
+        document.querySelector('.popup_image img').src = element.getAttribute('src');
+    })
+})
+
+document.querySelector('.popup_image span').addEventListener('click', ()=>{
+    document.querySelector('.popup_image').style.display = "none";
+})
