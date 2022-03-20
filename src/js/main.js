@@ -40,7 +40,7 @@ window.onload = ()=>{
         images[i].classList.add('visible');
         ( i===7 ) ? i = 0 : i++; 
     }, 800);
-    setInterval(loader, 2000);
+    setInterval(loader, 1000);
 }
 
 let add_btns = document.querySelectorAll('#add');
