@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Plug-in custom css-file style.css -->
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <link rel="shortcut icon" href="src/images/icon.png" type="image/x-icon" />
+
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Plug-in custom js-file main.js -->
+    <script src="src/js/main.js" defer></script>
+
+    <title>Pizza Website</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a class="logo" href="index.html">
+          <img src="src/images/logotype.png" alt="logo" />
+          <p class="name">The Pi<span>zz</span>a</p>
+        </a>
+
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#speciality">Speciality</a>
+          <a href="#popular">Popular</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#formOrder">Order</a>
+        </nav>
+
+        <div id="menuBars" class="fas fa-bars"></div>
+      </header>
+
+      <main class="page">
+        <section class="banner" id="home">
+          <div class="quote">
+            <h3 class="heading">Make pizza with love</h3>
+            <p class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+              optio numquam labore impedit eligendi aliquam ad, doloribus
+              corporis praesentium dignissimos?
+            </p>
+          </div>
+          <div class="image">
+            <img
+              class="pizza"
+              src="src/images/slider/home_image_1.png"
+              alt="banner"
+            />
+            <img
+              class="pizza"
+              src="src/images/slider/home_image_2.png"
+              alt="banner"
+            />
+            <img
+              class="pizza"
+              src="src/images/slider/home_image_3.png"
+              alt="banner"
+            />
+            <img
+              class="pizza"
+              src="src/images/slider/home_image_4.png"
+              alt="banner"
+            />
+            <img
+              class="pizza"
+              src="src/images/slider/home_image_5.png"
+              alt="banner"
+            />
+            <img
+              class="pizza"
+              src="src/images/slider/home_image_6.png"
+              alt="banner"
+            />
+            <img
+              class="pizza"
+              src="src/images/slider/home_image_7.png"
+              alt="banner"
+            />
+            <img
+              class="pizza"
+              src="src/images/slider/home_image_8.png"
+              alt="banner"
+            />
+          </div>
+        </section>
+        <section class="speciality" id="speciality">
+          <h2 class="heading">Our <span>Speciall</span> Dishes</h2>
+          <div class="box">
+            <div class="item">
+              <img
+                class="item__bigImg"
+                src="src/images/margherita.png"
+                alt="burger"
+              />
+              <div class="item__content">
+                <img
+                  class="item__smallImg"
+                  src="src/images/s-2.png"
+                  alt="burger"
+                />
+                <h4 class="item__heading">Tasty <span>Classic</span> Pizza</h4>
+                <p class="item__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum omnis illum aliquid rem quos dolorem fuga officia
+                  repudiandae recusandae perferendis.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img
+                class="item__bigImg"
+                src="src/images/seafood_pizza.jpg"
+                alt="burger"
+              />
+              <div class="item__content">
+                <img
+                  class="item__smallImg"
+                  src="src/images/s-2.png"
+                  alt="burger"
+                />
+                <h4 class="item__heading">Tasty <span>Seafood</span> Pizza</h4>
+                <p class="item__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum omnis illum aliquid rem quos dolorem fuga officia
+                  repudiandae recusandae perferendis.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img
+                class="item__bigImg"
+                src="src/images/mushroom.jpg"
+                alt="burger"
+              />
+              <div class="item__content">
+                <img
+                  class="item__smallImg"
+                  src="src/images/s-2.png"
+                  alt="burger"
+                />
+                <h4 class="item__heading">Tasty <span>Mushroom</span> Pizza</h4>
+                <p class="item__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum omnis illum aliquid rem quos dolorem fuga officia
+                  repudiandae recusandae perferendis.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img
+                class="item__bigImg"
+                src="src/images/vegeterian_pizza.jpg"
+                alt="burger"
+              />
+              <div class="item__content">
+                <img
+                  class="item__smallImg"
+                  src="src/images/s-2.png"
+                  alt="burger"
+                />
+                <h4 class="item__heading">
+                  Healthy <span>Vegeterian</span> Pizza
+                </h4>
+                <p class="item__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum omnis illum aliquid rem quos dolorem fuga officia
+                  repudiandae recusandae perferendis.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img class="item__bigImg" src="src/images/p-5.jpg" alt="burger" />
+              <div class="item__content">
+                <img
+                  class="item__smallImg"
+                  src="src/images/s-4.png"
+                  alt="burger"
+                />
+                <h4 class="item__heading">Cold <span>Drinks</span></h4>
+                <p class="item__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum omnis illum aliquid rem quos dolorem fuga officia
+                  repudiandae recusandae perferendis.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img
+                class="item__bigImg"
+                src="src/images/fresh_salad.jpeg"
+                alt="burger"
+              />
+              <div class="item__content">
+                <img
+                  class="item__smallImg"
+                  src="src/images/salad.png"
+                  alt="burger"
+                />
+                <h4 class="item__heading">Fresh <span>Salad</span></h4>
+                <p class="item__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum omnis illum aliquid rem quos dolorem fuga officia
+                  repudiandae recusandae perferendis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popular" id="popular">
+          <h2 class="heading">Most <span>Popular</span> Pizzas</h2>
+          <div class="popular__box">
+            <div class="popular__box_item">
+              <div class="image__container">
+                <img src="src/images/pop_1.jpg" alt="Cheese pizza" />
+                <span id="price">$15</span>
+              </div>
+              <div class="boxItem__content">
+                <h4 class="boxItem__content_heading">Cheese Pizza</h4>
+                <div class="stars">
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                </div>
+                <a href="#" id="add" class="btn_order" item-data="Cheese Pizza"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+            <div class="popular__box_item">
+              <div class="image__container">
+                <img src="src/images/pop_2.jpg" alt="Veggie Pizza" />
+                <span id="price">$15</span>
+              </div>
+              <div class="boxItem__content">
+                <h4 class="boxItem__content_heading">Veggie Pizza</h4>
+                <div class="stars">
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                </div>
+                <a href="#" id="add" class="btn_order" item-data="Veggie Pizza"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+            <div class="popular__box_item">
+              <div class="image__container">
+                <img src="src/images/pop_3.jpg" alt="Pepperoni Pizza" />
+                <span id="price">$15</span>
+              </div>
+              <div class="boxItem__content">
+                <h4 class="boxItem__content_heading">Pepperoni Pizza</h4>
+                <div class="stars">
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                </div>
+                <a
+                  href="#"
+                  id="add"
+                  class="btn_order"
+                  item-data="Pepperoni Pizza"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+            <div class="popular__box_item">
+              <div class="image__container">
+                <img src="src/images/pop_4.jpg" alt="Meat Pizza" />
+                <span id="price">$15</span>
+              </div>
+              <div class="boxItem__content">
+                <h4 class="boxItem__content_heading">Meat Pizza</h4>
+                <div class="stars">
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                </div>
+                <a href="#" id="add" class="btn_order" item-data="Meat Pizza"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+            <div class="popular__box_item">
+              <div class="image__container">
+                <img src="src/images/pop_5.jpeg" alt="Margherita Pizza" />
+                <span id="price">$15</span>
+              </div>
+              <div class="boxItem__content">
+                <h4 class="boxItem__content_heading">Margherita Pizza</h4>
+                <div class="stars">
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                </div>
+                <a
+                  href="#"
+                  id="add"
+                  class="btn_order"
+                  item-data="Margherita Pizza"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+            <div class="popular__box_item">
+              <div class="image__container">
+                <img src="src/images/pop_6.jpg" alt="BBQ Chicken Pizza" />
+                <span id="price">$15</span>
+              </div>
+              <div class="boxItem__content">
+                <h4 class="boxItem__content_heading">BBQ Chicken Pizza</h4>
+                <div class="stars">
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                </div>
+                <a
+                  href="#"
+                  id="add"
+                  class="btn_order"
+                  item-data="BBQ Chicken Pizza"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+            <div class="popular__box_item">
+              <div class="image__container">
+                <img src="src/images/pop_7.jpg" alt="Hawaiian Pizza" />
+                <span id="price">$15</span>
+              </div>
+              <div class="boxItem__content">
+                <h4 class="boxItem__content_heading">Hawaiian Pizza</h4>
+                <div class="stars">
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                </div>
+                <a
+                  href="#"
+                  id="add"
+                  class="btn_order"
+                  item-data="Hawaiian Pizza"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+            <div class="popular__box_item">
+              <div class="image__container">
+                <img src="src/images/pop_8.jpg" alt="Buffalo Pizza" />
+                <span id="price">$15</span>
+              </div>
+              <div class="boxItem__content">
+                <h4 class="boxItem__content_heading">Buffalo Pizza</h4>
+                <div class="stars">
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                </div>
+                <a href="#" id="add" class="btn_order" item-data="Buffalo Pizza"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+            <div class="popular__box_item">
+              <div class="image__container">
+                <img src="src/images/pop_9.jpg" alt="​Neapolitan Pizza" />
+                <span id="price">$15</span>
+              </div>
+              <div class="boxItem__content">
+                <h4 class="boxItem__content_heading">​Neapolitan Pizza</h4>
+                <div class="stars">
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                  <i id="star" class="fas fa-star"></i>
+                </div>
+                <a
+                  href="#"
+                  id="add"
+                  class="btn_order"
+                  item-data="Neapolitan Pizza"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="steps">
+          <div class="box">
+            <img src="src/images/step-1.jpg" />
+            <h3>Choose your favorite food</h3>
+          </div>
+          <div class="box">
+            <img src="src/images/step-2.jpg" />
+            <h3>Free and fast delivery</h3>
+          </div>
+          <div class="box">
+            <img src="src/images/step-3.jpg" />
+            <h3>Easy payments methods</h3>
+          </div>
+          <div class="box">
+            <img src="src/images/step-4.jpg" />
+            <h3>And finally, enjoy your food</h3>
+          </div>
+        </section>
+        <section class="gallery" id="gallery">
+          <h2 class="heading">Our Food <span>Gallery</span></h2>
+          <div class="gallery__box">
+            <a href="#" class="imageContainer">
+              <img src="src/images/g-1.jpg" />
+            </a>
+            <a href="#" class="imageContainer">
+              <img src="src/images/g-1.jpg" />
+            </a>
+            <a href="#" class="imageContainer">
+              <img src="src/images/g-1.jpg" />
+            </a>
+            <a href="#" class="imageContainer">
+              <img src="src/images/g-1.jpg" />
+            </a>
+            <a href="#" class="imageContainer">
+              <img src="src/images/g-1.jpg" />
+            </a>
+            <a href="#" class="imageContainer">
+              <img src="src/images/g-1.jpg" />
+            </a>
+          </div>
+        </section>
+        <section class="reviews" id="reviews">
+          <h2 class="heading">Our Customers <span>Reviews</span></h2>
+          <div class="box__reviws">
+            <div class="review">
+              <img src="src/images/pic1.png" />
+              <h3>Ekaterina Egorova</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat perferendis distinctio dolor, alias id hic fuga mollitia
+                expedita a. Inventore.
+              </p>
+            </div>
+            <div class="review">
+              <img src="src/images/pic2.png" />
+              <h3>John Smith</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat perferendis distinctio dolor, alias id hic fuga mollitia
+                expedita a. Inventore.
+              </p>
+            </div>
+            <div class="review">
+              <img src="src/images/pic3.png" />
+              <h3>Moon Chae</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat perferendis distinctio dolor, alias id hic fuga mollitia
+                expedita a. Inventore.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="formOrder" id="formOrder">
+          <h2 class="heading"><span>Order</span> Now</h2>
+          <div class="box">
+            <div class="img_box">
+              <img src="src/images/order.jpg" />
+            </div>
+            <form action="#" method="post">
+              <div class="inputBox">
+                <input type="text" name="name" id="name" placeholder="name" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+                />
+              </div>
+              <div class="inputBox">
+                <input
+                  type="number"
+                  name="phone"
+                  id="phone"
+                  placeholder="phone"
+                />
+                <input type="text" id="foods" placeholder="food name" />
+              </div>
+              <textarea placeholder="address" cols="30" rows="10"></textarea>
+
+              <input
+                type="submit"
+                class="btn_order"
+                value="order now"
+                id="formSubmit"
+              />
+            </form>
+          </div>
+        </section>
+        <a href="#home" class="fas fa-angle-up" id="scrollTop"></a>
+      </main>
+      <footer>
+        <div class="share">
+          <a href="#" class="btn_order">facebook</a>
+          <a href="#" class="btn_order">twitter</a>
+          <a href="#" class="btn_order">instagram</a>
+          <a href="#" class="btn_order">telegram</a>
+          <a href="#" class="btn_order">vk</a>
+        </div>
+      </footer>
+      <div class="loader">
+        <img src="src/images/loader.gif" />
+      </div>
+    </div>
+  </body>
+</html>

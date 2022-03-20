@@ -1,0 +1,24 @@
+// Брейкпоинты
+$md1: 1024px; //ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$md2: 768px; // Планшеты, некоторые телефоны в горизонтальном положении
+$md3: 425px; // Телефоны L
+$md4: 320px; // Телефоны S
+
+//Переменные
+$colorRed: #ff3838;
+$secondColor: #666;
+$cartColor: #333;
+
+footer {
+  background-color: #000;
+  padding: 1rem 9%;
+  .share {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a {
+      color: white;
+      margin-top: 0;
+    }
+  }
+}

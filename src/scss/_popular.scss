@@ -1,0 +1,90 @@
+// Брейкпоинты
+$md1: 1024px; //ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$md2: 768px; // Планшеты, некоторые телефоны в горизонтальном положении
+$md3: 425px; // Телефоны L
+$md4: 320px; // Телефоны S
+
+//Переменные
+$colorRed: #ff3838;
+$secondColor: #666;
+$cartColor: #333;
+
+.popular {
+  min-height: 100vh;
+  padding: 2.5rem 9% 0;
+  .heading {
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $secondColor;
+    span {
+      color: $colorRed;
+    }
+  }
+  .popular__box {
+    margin: 2.2rem 0 0 0;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    &_item {
+      border-radius: 0.3rem;
+      border: 0.1rem solid rgb(199, 199, 199);
+      padding: 1.2rem;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      background-color: #fff;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      color: $cartColor;
+      .image__container {
+        position: relative;
+        #price {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 0.5rem;
+          color: #fff;
+          background-color: $colorRed;
+          border-radius: 0.2rem;
+          font-size: 1.2rem;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 0.3rem;
+        }
+      }
+      .boxItem__content {
+        margin-top: 1.2rem;
+        display: grid;
+
+        text-align: center;
+        &_heading {
+          font-size: 1.5rem;
+        }
+        .stars {
+          margin-top: 1rem;
+          font-size: 1rem;
+          #star {
+            cursor: pointer;
+            color: gold;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*media queries */
+
+@media (min-width: 655px) and (max-width: 1248px) {
+  .popular {
+    .popular__box {
+      &_item:last-of-type {
+        display: none;
+      }
+    }
+  }
+}

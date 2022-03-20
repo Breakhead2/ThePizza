@@ -1,0 +1,96 @@
+// Брейкпоинты
+$md1: 1024px; //ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$md2: 768px; // Планшеты, некоторые телефоны в горизонтальном положении
+$md3: 425px; // Телефоны L
+$md4: 320px; // Телефоны S
+
+//Переменные
+$colorRed: #ff3838;
+$secondColor: #666;
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  padding: 1.2rem 9%;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  .logo {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-left: 1rem;
+      color: $secondColor;
+      span {
+        color: $colorRed;
+      }
+    }
+  }
+  .navbar {
+    transition: all 0.2s linear;
+    background-color: #fff;
+    a {
+      font-size: 1.2rem;
+      margin-left: 2rem;
+      color: $secondColor;
+      background-color: #fff;
+    }
+    a:hover {
+      color: $colorRed;
+    }
+  }
+  #menuBars {
+    display: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: $secondColor;
+    border: 0.1rem solid $secondColor;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+/* media queries header */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      padding: 1.2rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      a {
+        display: block;
+        padding: 1rem;
+        border: 0.1rem solid $secondColor;
+        border-left: 0.5rem solid $colorRed;
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+      }
+      a:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    #menuBars {
+      display: block;
+    }
+  }
+}

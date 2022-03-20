@@ -1,0 +1,64 @@
+// Брейкпоинты
+$md1: 1024px; //ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$md2: 768px; // Планшеты, некоторые телефоны в горизонтальном положении
+$md3: 425px; // Телефоны L
+$md4: 320px; // Телефоны S
+
+//Переменные
+$colorRed: #ff3838;
+$secondColor: #666;
+$cartColor: #333;
+
+.reviews {
+  padding: 2.5rem 9% 0;
+  .heading {
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $secondColor;
+    span {
+      color: $colorRed;
+    }
+  }
+  .box__reviws {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 6.5rem 0 0 0;
+    .review {
+      flex: 1 1 20rem;
+      justify-content: center;
+      padding: 1rem;
+      background-color: $cartColor;
+      border: 1rem solid white;
+      border-radius: 0.3rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 3rem;
+      img {
+        width: 12rem;
+        height: 12rem;
+        margin-top: -6rem;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 50%;
+      }
+      h3 {
+        margin-top: 2rem;
+        color: white;
+        font-size: 1.4rem;
+      }
+      .stars {
+        margin: 0.8rem 0;
+        font-size: 1.2rem;
+        color: $colorRed;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: white;
+      }
+    }
+  }
+}

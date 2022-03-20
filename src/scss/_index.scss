@@ -1,0 +1,70 @@
+@import "banner";
+@import "speciality";
+@import "popular";
+@import "steps";
+@import "gallery";
+@import "reviews";
+@import "order";
+
+.btn_order {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: $colorRed;
+  border: 0.1rem solid $colorRed;
+  border-radius: 0.3rem;
+  place-self: center;
+  font-size: 1rem;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+.btn_order::before {
+  content: "";
+  height: 106%;
+  top: -0.1rem;
+  right: -0.1rem;
+  background: $colorRed;
+  transition: 0.3s linear;
+  width: 0%;
+  position: absolute;
+  border-radius: 0.3rem;
+  z-index: -1;
+}
+.btn_order:hover::before {
+  width: 102%;
+  left: -0.1rem;
+}
+.btn_order:hover {
+  color: #fff;
+}
+
+#scrollTop {
+  position: fixed;
+  top: -120%;
+  right: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 4rem;
+  background-color: #ff3838;
+  color: white;
+  border-radius: 0.5rem;
+  transition: 1s liner;
+  z-index: 1000;
+}
+#scrollTop.active {
+  top: calc(100% - 12rem);
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.loader.fade-out {
+  top: -120%;
+}
