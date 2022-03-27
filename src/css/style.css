@@ -146,7 +146,7 @@ header .logo {
   align-items: center;
 }
 header .logo p {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   margin-left: 1rem;
   color: #666;
@@ -169,7 +169,7 @@ header .navbar a:hover {
 }
 header #menuBars {
   display: none;
-  font-size: 1.2rem;
+  font-size: 3rem;
   cursor: pointer;
   color: #666;
   border: 0.1rem solid #666;
