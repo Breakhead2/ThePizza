@@ -94,3 +94,19 @@ header {
     }
   }
 }
+
+@media (max-width: 450px) {
+  header {
+    .logo {
+      p {
+        font-size: 3.3rem;
+      }
+    }
+    .navbar {
+      a {
+        padding: 2rem;
+        font-size: 2.3rem;
+      }
+    }
+  }
+}

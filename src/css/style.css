@@ -212,6 +212,15 @@ header #menuBars {
     display: block;
   }
 }
+@media (max-width: 450px) {
+  header .logo p {
+    font-size: 3.3rem;
+  }
+  header .navbar a {
+    padding: 2rem;
+    font-size: 2.3rem;
+  }
+}
 .banner {
   padding: 6.5rem 9% 0;
   display: flex;
